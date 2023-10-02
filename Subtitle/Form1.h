@@ -25,10 +25,6 @@ namespace CppCLRWinFormsProject {
 
 			MessageBox::Show(gcnew String(std::to_string(SET_SUBTI5LE("C:\\Users\\m0939\\Desktop\\morteza_gh\\New folder", "The Rebel S01E03 720p WEB-DL unicode.srt", 5)).c_str()));
 			
-			//subtitle ep("C:\\Users\\m0939\\Desktop\\morteza_gh\\New folder\\The Rebel S01E03 720p WEB-DL unicode.srt",3,0);
-			//if(ep.sub())
-			//MessageBox::Show("ok");
-			//else
 			//	MessageBox::Show("eroor");
 		}
 
