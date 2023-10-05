@@ -319,7 +319,9 @@ std::string StringConvert(String^ str) {
 	return STR;
 }
 
+
 String^ StringConvert(std::string str) {
 	return gcnew String(str.c_str());
+
 }
 

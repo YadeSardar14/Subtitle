@@ -751,9 +751,12 @@ namespace CppCLRWinFormsProject {
 		else
 			MessageBox::Show("Subtitle not found!", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 
-		if(ShError == Windows::Forms::DialogResult::Yes)
-			MessageBox::Show("Subtitles", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
-
+		if (ShError == Windows::Forms::DialogResult::Yes) {
+			std::string Elist = "";
+			for (auto e : SubError)
+				Elist.append(e+"\n");
+				MessageBox::Show(StringConvert(Elist), "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
 
 	}
 	private: System::Void NUEpEnd_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
