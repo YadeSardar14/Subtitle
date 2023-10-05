@@ -753,6 +753,8 @@ namespace CppCLRWinFormsProject {
 
 		if(ShError == Windows::Forms::DialogResult::Yes)
 			MessageBox::Show("Subtitles", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+
+
 	}
 	private: System::Void NUEpEnd_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
 
